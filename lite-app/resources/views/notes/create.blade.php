@@ -19,7 +19,7 @@
                     <x-text-input type="text" field="title" name="title" class="w-full" autocomplete="off"
                         placeholder="Title" :value="@old('title')">
                     </x-text-input>
-                    {{--  :value="@old('title')" is used to parse the value to component--}}
+                    {{--  :value="@old('title')" is used to parse the value to component --}}
                     {{-- accessing the error component by specifying the prop field value --}}
                     <x-textarea name="text" field="text" id="text" cols="30" rows="10"
                         placeholder="Start typing here..." :value="@old('text')" class="w-full"></x-textarea>

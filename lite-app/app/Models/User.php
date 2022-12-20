@@ -43,7 +43,8 @@ class User extends Authenticatable
     ];
 
     // the function name notes should be plural has it belongs to user
-    public function notes(){
+    public function notes()
+    {
         return $this->hasMany(Note::class);
     }
 }

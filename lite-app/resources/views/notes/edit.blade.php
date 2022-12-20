@@ -12,7 +12,7 @@
                 <form action="{{ route('notes.update', $note) }}" method="POST">
                     @csrf
                     {{-- method inside form tag can only accept get and post thus add separate method --}}
-                    @method('put') 
+                    @method('put')
 
                     <x-text-input type="text" field="title" name="title" class="w-full" autocomplete="off"
                         placeholder="Title" :value="@old('title', $note->title)">

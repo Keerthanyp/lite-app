@@ -28,13 +28,10 @@
                 <div class="my-6 p-6 bg-white border-b border-grat-200 shadow-sm sm:rounded-lg">
                     <h2 class="font-bold text-3xl">
                         {{-- <a href="{{ route('notes.show', $note->uuid ) }}">{{ $note->title }}</a> --}}
-                        <a 
-            @if (request()->routeIs('notes.index'))
-            href="{{ route('notes.show', $note) }}"
+                        <a
+                            @if (request()->routeIs('notes.index')) href="{{ route('notes.show', $note) }}"
             @else
-            href="{{ route('trashed.show', $note) }}"
-            @endif
-            >{{ $note->title }}</a>
+            href="{{ route('trashed.show', $note) }}" @endif>{{ $note->title }}</a>
                     </h2>
                     <p class="mt-2">
                         {{-- {{ $note->text }} #this would display even if the lengthy text is added thus add a string limit --}}

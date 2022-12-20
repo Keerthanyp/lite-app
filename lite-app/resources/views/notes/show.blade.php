@@ -24,7 +24,7 @@
                         @method('delete')
                         @csrf
                         <button type="submit" class="btn btn-danger ml-4"
-                            onclick="return confirm('Are you sure to move this Note to Trash')">Move to Trash</button>
+                            onclick="return confirm('Are you sure to move this Note to Trash?')">Move to Trash</button>
                     </form>
                 @else
                     <p class="opacity-70">
@@ -41,7 +41,8 @@
                         @method('delete')
                         @csrf
                         <button type="submit" class="btn btn-danger ml-4"
-                            onclick="return confirm('Are you sure to delete this Note forever? This action cannot be undone')">Move to Trash</button>
+                            onclick="return confirm('Are you sure to delete this Note forever? This action cannot be undone!')">Delete
+                            Note</button>
                     </form>
                 @endif
             </div>

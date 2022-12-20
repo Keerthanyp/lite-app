@@ -20,7 +20,8 @@ class Note extends Model
     }
 
     // the function name- user should be singular has it has many notes
-    public function user(){
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 }

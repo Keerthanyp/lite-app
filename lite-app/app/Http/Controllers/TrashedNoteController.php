@@ -36,8 +36,7 @@ class TrashedNoteController extends Controller
             return abort(403);
         }
         $note->forceDelete();
-        return to_route('trashed.index')->with('success', 'Note was deleted forever');
+        return to_route('trashed.index')->with('success', 'Note was deleted forever!');
     }
 
-    
 }
